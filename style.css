@@ -27,13 +27,13 @@ main {
 header {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2.5rem;
   margin-bottom: 2rem;
 }
 
 header img.avatar {
-  width: 108px;
-  height: 108px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
 }
