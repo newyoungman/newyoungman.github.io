@@ -34,48 +34,83 @@
     <h2>Publications</h2>
     <ol class="pubs">
       <li>
-        <b>Zhenfeng Liu</b>, [CO-AUTHOR]. "[PAPER TITLE]."
-        <span class="venue">[CONFERENCE/JOURNAL]</span>, [YEAR].
-        <span class="links">[<a href="#">PDF</a>]</span>
+        <b>Zhenfeng Liu</b>, et al. "LocalSearchBench: Benchmarking Agentic
+        Search in Real-World Local Life Services."
+        <span class="venue">KDD</span>, 2026.
+        <span class="links">[<a href="https://arxiv.org/abs/2512.07436">PDF</a>]</span>
       </li>
-      <!-- 更多论文复制上面的 li 块，保持年份倒序 -->
+      <li>
+        <b>Zhenfeng Liu</b>, et al. "RecRM-Bench: Benchmarking Multidimensional
+        Reward Modeling for Agentic Recommender Systems."
+        <span class="venue">EMNLP (under review)</span>, 2026.
+        <span class="links">[<a href="https://arxiv.org/abs/2605.11874">PDF</a>]</span>
+      </li>
+      <li>
+        <b>Zhenfeng Liu</b>, et al. "Realistic Rainy Weather Simulation for
+        LiDARs in CARLA Simulator."
+        <span class="venue">IROS</span>, 2024.
+        <span class="links">[<a href="https://arxiv.org/abs/2407.02531">PDF</a>]</span>
+      </li>
     </ol>
   </section>
 
   <section id="experience">
     <h2>Experience</h2>
     <ul class="timeline">
-      <li><span class="when">[2025 – now]</span>
-        <b>Agent Engineer</b>, Meituan — Agent evaluation &amp; benchmark construction.</li>
-      <li><span class="when">[YEAR – YEAR]</span>
-        <b>[ROLE]</b>, [COMPANY/LAB] — [ONE-LINE DESCRIPTION].</li>
+      <li><span class="when">2025 – now</span>
+        <b>LLM Algorithm Engineer</b>, Meituan (Wen Xiao Tuan AI Assistant) —
+        Leading agent evaluation &amp; reward systems and supply search tooling;
+        built the relevance LLM (SFT + GRPO) and the OmniReward serving system.</li>
+      <li><span class="when">2024</span>
+        <b>LLM Algorithm Intern</b>, Meituan — Multimodal content generation
+        for the food-delivery UGC community (GPT-4 + LLaVA).</li>
+      <li><span class="when">2023 – 2024</span>
+        <b>LLM Algorithm Intern</b>, Shanghai AI Laboratory — HKLawGPT:
+        legal-domain LLM with hybrid retrieval (BM25 + Faiss + ColBERT).</li>
+      <li><span class="when">2021 – 2022</span>
+        <b>Autonomous Driving Simulation Intern</b>, SenseTime —
+        LiDAR rain simulation in CARLA; work published at IROS.</li>
     </ul>
 
     <h2>Education</h2>
     <ul class="timeline">
-      <li><span class="when">[YEAR – YEAR]</span>
-        <b>[DEGREE] in [MAJOR]</b>, [UNIVERSITY NAME].</li>
+      <li><span class="when">2022 – 2025</span>
+        <b>M.Eng. in Electronic Information (Communication Engineering)</b>,
+        Nankai University.</li>
+      <li><span class="when">2018 – 2022</span>
+        <b>B.Eng. in Electronic Information Engineering</b>,
+        University of Shanghai for Science and Technology (top 3%).</li>
     </ul>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
     <div class="proj">
-      <h3>[PROJECT NAME]</h3>
-      <p>[ONE-TWO SENTENCE DESCRIPTION]. <a href="#">[Link]</a></p>
+      <h3>Supply Search Relevance LLM</h3>
+      <p>Built the relevance model for Meituan's agent supply search from scratch:
+      decomposed relevance into attributable dimensions (subject / address / time /
+      objective conditions), constructed a 10k+ hierarchical benchmark with automated
+      production pipelines, and trained with SFT + GRPO (verifiable rewards) on Qwen3.5.</p>
     </div>
     <div class="proj">
-      <h3>[PROJECT NAME]</h3>
-      <p>[ONE-TWO SENTENCE DESCRIPTION]. <a href="#">[Link]</a></p>
+      <h3>OmniReward — Agent Reward System</h3>
+      <p>A serving system scoring agent trajectories across 50+ dimensions
+      (relevance, hallucination, timeliness, safety, reflection, …) with 30+
+      parallel scorers; cut wall-clock latency by 46% while improving reward
+      quality, and powered GRPO post-training with +0.4 satisfaction gain.</p>
+    </div>
+    <div class="proj">
+      <h3>LLM Prompt Recovery — Kaggle Silver Medal</h3>
+      <p>Recovered prompts behind LLM-rewritten text with an ensemble of
+      retrieval, fine-tuned Phi-2, and Mistral-7B prediction, reaching
+      66.23% sharpened cosine similarity.</p>
     </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:[YOUR-EMAIL]">[YOUR-EMAIL]</a></p>
+    <p>Email: <a href="mailto:liuzfvip@163.com">liuzfvip@163.com</a></p>
     <p>GitHub: <a href="https://github.com/newyoungman">github.com/newyoungman</a></p>
-    <!-- 如有再加：
-    <p><a href="[SCHOLAR-URL]">Google Scholar</a></p> -->
   </section>
 
   <footer>
