@@ -1,0 +1,116 @@
+/* newyoungman.github.io — classic academic homepage style */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --accent: #0a5a8c;        /* link & rule color */
+  --text: #1a1a1a;
+  --muted: #555;
+  --rule: #d8d8d8;
+}
+
+html { font-size: 17px; }
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: var(--text);
+  line-height: 1.65;
+  background: #fff;
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+
+/* ---------- header ---------- */
+header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+header img.avatar {
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 1.85rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.title {
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+
+/* ---------- sections ---------- */
+section { margin-top: 2.5rem; }
+
+h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---------- publications ---------- */
+ol.pubs { list-style: none; counter-reset: pub; }
+ol.pubs li {
+  counter-increment: pub;
+  margin-bottom: 1.1rem;
+  padding-left: 2rem;
+  position: relative;
+}
+ol.pubs li::before {
+  content: "[" counter(pub) "]";
+  position: absolute;
+  left: 0;
+  color: var(--muted);
+}
+ol.pubs .venue { color: var(--muted); font-style: italic; }
+ol.pubs .links { font-size: 0.9rem; white-space: nowrap; }
+
+/* ---------- experience / projects ---------- */
+ul.timeline { list-style: none; }
+ul.timeline li { margin-bottom: 0.9rem; padding-left: 7.5rem; position: relative; }
+ul.timeline .when {
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  width: 6.7rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.proj { margin-bottom: 1.1rem; }
+.proj h3 { font-size: 1rem; margin-bottom: 0.15rem; }
+.proj p { font-size: 0.95rem; color: var(--muted); }
+
+/* ---------- contact ---------- */
+#contact p { margin-bottom: 0.4rem; }
+
+footer {
+  margin-top: 3rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 1rem;
+}
+
+/* ---------- mobile ---------- */
+@media (max-width: 540px) {
+  header { flex-direction: column; text-align: center; }
+  ul.timeline li { padding-left: 0; }
+  ul.timeline .when { position: static; display: block; width: auto; margin-bottom: 0.1rem; }
+}
